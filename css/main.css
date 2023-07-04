@@ -1,0 +1,331 @@
+
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+body{font-family: verdana; font-size: 12px;line-height: 16px;background: url(../img/abstract-technology-particle-background_52683-25766.jpg)repeat fixed 00 white;}
+.clear{overflow: hidden;}
+.templet{width: 1000px;margin: 0 auto}
+a{color: black;font-weight: bold;text-decoration: none;}
+a:hover{text-decoration: underline;}
+h1,h2,h3,h4,h5,h6{font-weight: normal}
+p{margin-bottom: 15px;}
+.headsection{height: 80px;background: rgb(127, 40, 207);}
+.headleft{float: left;width: 500px; margin-right:50px;font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;}
+.headleft h2{float: left;font-size: 36px;line-height: 40px;padding-left: 20px;padding-right: 45px;margin-top: 8px;border-right: 1px solid;}
+.headleft p{float: left;font-size: 16px;margin-left: 20px;margin-top: 18px;}
+.headright{float: right;width: 290px;margin-top: 15px;margin-right: 20px;}
+.headright input[type="text"]{width: 245px;background:#EBEBEB ;border: 1px solid #93B050;padding: 5px;}
+.headright input[type="submit"]{background:#EBEBEB;border: 1px solid #93B050;padding: 4px;cursor: pointer;}
+.menusection{background:rgb(0, 184, 197);height: 45px;}
+.menuleft{float: left;width: 700px;}
+.menuleft ul{margin: 0;padding: 0;list-style: none;}
+.menuleft ul li{float: left;display: block;padding: 10px 25px;font-size: 14px;border-right: 1px solid #F5F0F0;margin: 5px 0px;}
+.menuleft ul li:last-child{border-right: none;}
+.menuleft ul li a{display: block;color:beige;text-decoration: none;}
+.menuleft ul li a:hover{color: #000000;transition: 1s}
+.menuright{float: right;width: 195px; color: cornsilk;margin-top: 6px;}
+.menuright p{margin: 0px;}
+#active{color: darkslateblue;}
+.bannersection{background:#0F75AD;height: 335px;border-top: 2px solid #688697;border-bottom: 2px solid #0A945A;}
+.bannerleft{width: 465px;float: left;margin-left: 20px;margin-right: 20px;}
+.bannerleft h2{font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;font-size: 36px;color: white;border-bottom: 1px solid white;margin-top: 40px;margin-bottom: 20px;padding-bottom: 15px;}
+.bannerleft p{color: white;line-height: 18px;text-align: justify;}
+.bannerlink{}
+.bannlink{background:#DDCFCF;width: 168px;float: left; margin-right: 40px;padding: 9px 20px;border-radius: 3px;margin-top: 20px;}
+.bannlink a{color:#666;text-align: center;font-size: 20px; font-weight: normal;text-decoration: none;}
+.bannlink a:hover{color:#21B524;}
+.bannerright{width: 455px;float: right;margin-right: 20px;}
+.bannerright img{margin-top: 45px;margin-left: 20px;height: 250px;width: 400px;border-radius: 30px 0px 30px 0px;}
+.servicesection{background:#1E1655;padding: 0px 20px;border-bottom: 1px solid white;padding-bottom: 30px;}
+.service{width: 238px;float: left;border: 1px solid #939393;}
+.service h2{font-family: georgia;font-size: 22px;color:#08D164;background:#EBEBEB; padding: 20px;text-transform: uppercase;text-align: center;margin-bottom: 20px;}
+.service h3{font-family: georgia;font-size: 22px;text-align: center;color: #BD9110;border-bottom: 1px solid white;padding-bottom: 10px;}
+.service p{font-size: 13px;line-height: 18px;text-align: justify;padding:0px 8px 8px 8px;color:white;}
+.service a{float: right; text-decoration: none;background:#0295FF;font-size: 12px;font-weight: normal;margin-bottom: 5px;border-radius: 3px;color: white;padding: 2px;}
+.service a:hover{background: #D3CB08;color: black;transition: 1s;}
+.contentsection{background: #c6ebe8;}
+.contentleft{float: left;width: 400px; margin-left: 20px;margin-right: 10px;}
+.contentleft h2{font-family: georgia;font-size: 22px;color: #BD9110;}
+.contleftdesc{padding-top: 6px;border-top: 1px solid #7A7777;padding-bottom: 8px;}
+.leftimg {float: left;margin-right: 4px;}
+.leftimg img{background: black;padding: 2px;border: 1px solid;width: 90px;height: 90px;margin-top: 16px;}
+.righttext {float: right;width: 300px;}
+.righttext h3{font-weight: bold;}
+.righttext p{color: black;line-height: 18px;text-align: justify;}
+.righttext a{float: right;text-decoration: none;}
+.righttext a:hover{color: #E80003;}
+.contentright{float: right;width: 520px; margin-right: 20px;}
+.contentright h2{font-family: georgia;font-size: 22px;color: #BD9110;border-bottom: 1px solid #7A7777;margin-bottom: 17px;padding-bottom: 18px;}
+.contentright img{float: left;width: 200px;height: 150px;background: white;padding: 2px;margin-right: 10px;}
+.contentright h3{font-weight: bold;}
+.contentright p{color: black;line-height: 18px;text-align: justify;}
+.footertop{background: #212121;border-bottom: 2px solid #565656;}
+.samefooter{width: 300px;float: left;margin-left: 20px;}
+.samefooter h2{color: cornflowerblue;border-bottom: 1px solid white;margin-top: 20px;margin-bottom: 20px;padding-bottom: 15px;}
+.samefooter p{color:white;text-align: justify;}
+.samefooter input[type="text"]{width: 250px;padding: 4px;}
+.samefooter input[type="submit"]{cursor: pointer;padding: 4px;}
+.samefooter ul{}
+.samefooter ul li{padding-top: 4px;}
+.samefooter ul li a{color: aqua;text-decoration: none;transition: 1s;padding-right: 20px;}
+.samefooter a:hover{color: red;}
+.samefooter a{color: aqua;text-decoration: none;transition: 1s;}
+.footerbottom{background-color: rgb(15, 138, 56);}
+.footleft{float: left;margin-left: 20px;}
+.footleft p{color: white;}
+.footright{float:right;margin-right: 20px;}
+.footright p{color: white;}
+.fixedicon{	position: fixed;left: 120px;top: 180px;width: 60px;}
+.fixedicon img{width: 50px;height: 50px;border-radius: 6px;margin-top: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
